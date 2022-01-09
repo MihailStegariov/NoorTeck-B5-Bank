@@ -8,13 +8,13 @@ import com.noorteck.qa.utils.CommonUI;
 
 public class HomePage extends CommonUI{
 
-	@FindBy(xpath = "/html/body/app-root/mat-sidenav-container/mat-sidenav-content/mat-toolbar/div[3]/ul/li[2]/a/span")
+	@FindBy(xpath = "//li//a//span[text() = 'Transfer']")
 	WebElement transferButton;
 	
-	@FindBy(xpath = "/html/body/app-root/mat-sidenav-container/mat-sidenav-content/mat-toolbar/div[3]/ul/li[4]/a/span")
+	@FindBy(xpath = "//li//a//span[text() = 'Loans']")
 	WebElement loansButton;
 	
-	@FindBy(xpath = "/html/body/app-root/mat-sidenav-container/mat-sidenav-content/mat-toolbar/div[3]/ul/li[5]/a/span")
+	@FindBy(xpath = "//li//a//span[text() = 'LogOut']")
 	WebElement logOutButton;
 	
 	public HomePage() {
